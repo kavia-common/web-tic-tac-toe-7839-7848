@@ -1,0 +1,90 @@
+{
+  "project": {
+    "name": "Tic Tac Toe",
+    "description": "A simple web-based Tic Tac Toe game allowing users to play against each other in the browser."
+  },
+  "container": {
+    "name": "tic_tac_toe_frontend",
+    "type": "frontend",
+    "platform": "web",
+    "framework": "react",
+    "workspace": "web-tic-tac-toe-7839-7848",
+    "container_root": "web-tic-tac-toe-7839-7848/tic_tac_toe_frontend",
+    "interfaces": ["Web UI"],
+    "dependencies": []
+  },
+  "container_details": {
+    "features": [
+      "2-player mode",
+      "Game board display",
+      "Current turn indicator",
+      "Win/draw notification",
+      "Restart game"
+    ],
+    "theme": "light",
+    "layout_description": "Centered 3x3 game grid with controls above and game status below the grid.",
+    "style": "modern",
+    "colors": {
+      "primary": "#4F8EF7",
+      "secondary": "#FFFFFF",
+      "accent": "#FF6F61"
+    }
+  },
+  "runtime": {
+    "start_script": "react-scripts start",
+    "build_script": "react-scripts build",
+    "test_script": "react-scripts test",
+    "dev_server_url": "https://vscode-internal-38164-qa.qa01.cloud.kavia.ai:3000/preview.html",
+    "env": {}
+  },
+  "package_json": {
+    "name": "react-kavia",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "^5.0.1"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.3"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    }
+  },
+  "source_overview": {
+    "entrypoint": "src/index.js",
+    "root_component": "src/App.js",
+    "styles": [
+      "src/index.css",
+      "src/App.css"
+    ],
+    "tests": [
+      "src/App.test.js",
+      "src/setupTests.js"
+    ]
+  },
+  "ui_theming": {
+    "css_variables": {
+      "light": {
+        "--bg-primary": "#ffffff",
+        "--bg-secondary": "#f8f9fa",
+        "--text-primary": "#282c34",
+        "--text-secondary": "#61dafb",
+        "--border-color": "#e9ecef",
+        "--button-bg": "#007bff",
+        "--button-text": "#ffffff"
+      },
+      "dark": {
+        "--bg-primary": "#1a1a1a",
+        "--bg-secondary": "#282c34",
+        "--text-primary": "#ffffff",
+        "--text-secondary": "#61dafb",
+        "--border-color": "#404040",
+        "--button-bg": "#0056b3",
+        "--button-text": "#ffffff"
+      }
+    }
+  }
+}
